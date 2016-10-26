@@ -24,5 +24,21 @@ public class NumbersActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
+		
+		// create array for number words
+		String[] words = new String[10];
+		
+		// populate array with words for 1 - 10
+		words[0] = String.valueOf(R.string.one);
+		words[1] = String.valueOf(R.string.two);
+		words[2] = String.valueOf(R.string.three);
+		words[3] = String.valueOf(R.string.four);
+		words[4] = String.valueOf(R.string.five);
+		words[5] = String.valueOf(R.string.six);
+		words[6] = String.valueOf(R.string.seven);
+		words[7] = String.valueOf(R.string.eight);
+		words[8] = String.valueOf(R.string.nine);
+		words[9] = String.valueOf(R.string.ten);
+		
     }
 }
