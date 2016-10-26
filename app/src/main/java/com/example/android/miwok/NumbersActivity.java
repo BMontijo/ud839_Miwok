@@ -17,6 +17,7 @@ package com.example.android.miwok;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import java.util.*;
 
 public class NumbersActivity extends AppCompatActivity {
 
@@ -26,19 +27,19 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 		
 		// create array for number words
-		String[] words = new String[10];
+		List<String> words = new ArrayList<String>();
 		
 		// populate array with words for 1 - 10
-		words[0] = String.valueOf(R.string.one);
-		words[1] = String.valueOf(R.string.two);
-		words[2] = String.valueOf(R.string.three);
-		words[3] = String.valueOf(R.string.four);
-		words[4] = String.valueOf(R.string.five);
-		words[5] = String.valueOf(R.string.six);
-		words[6] = String.valueOf(R.string.seven);
-		words[7] = String.valueOf(R.string.eight);
-		words[8] = String.valueOf(R.string.nine);
-		words[9] = String.valueOf(R.string.ten);
+		words.add(String.valueOf(R.string.one));
+		words.add(String.valueOf(R.string.two));
+		words.add(String.valueOf(R.string.three));
+		words.add(String.valueOf(R.string.four));
+		words.add(String.valueOf(R.string.five));
+		words.add(String.valueOf(R.string.six));
+		words.add(String.valueOf(R.string.seven));
+		words.add(String.valueOf(R.string.eight));
+		words.add(String.valueOf(R.string.nine));
+		words.add(String.valueOf(R.string.ten));
 		
     }
 }
