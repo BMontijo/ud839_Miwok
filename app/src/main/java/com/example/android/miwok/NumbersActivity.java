@@ -18,6 +18,7 @@ package com.example.android.miwok;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import java.util.*;
+import android.widget.*;
 
 public class NumbersActivity extends AppCompatActivity {
 
@@ -30,16 +31,37 @@ public class NumbersActivity extends AppCompatActivity {
 		List<String> words = new ArrayList<String>();
 		
 		// populate array with words for 1 - 10
-		words.add(String.valueOf(R.string.one));
-		words.add(String.valueOf(R.string.two));
-		words.add(String.valueOf(R.string.three));
-		words.add(String.valueOf(R.string.four));
-		words.add(String.valueOf(R.string.five));
-		words.add(String.valueOf(R.string.six));
-		words.add(String.valueOf(R.string.seven));
-		words.add(String.valueOf(R.string.eight));
-		words.add(String.valueOf(R.string.nine));
-		words.add(String.valueOf(R.string.ten));
+		words.add(getResources().getString(R.string.one));
+		words.add(getResources().getString(R.string.two));
+		words.add(getResources().getString(R.string.three));
+		words.add(getResources().getString(R.string.four));
+		words.add(getResources().getString(R.string.five));
+		words.add(getResources().getString(R.string.six));
+		words.add(getResources().getString(R.string.seven));
+		words.add(getResources().getString(R.string.eight));
+		words.add(getResources().getString(R.string.nine));
+		words.add(getResources().getString(R.string.ten));
+		
+		// find layout for adding views
+		LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
+		
+		// initialize loop counter
+		int loop = 0;
+		
+		// loop to create and pooulate TextViews
+		while (loop < words.size()) {
+			// create TextView
+			TextView wordView = new TextView(this);
+			
+			// populate TextView
+			wordView.setText(words.get(loop));
+			
+			// add TextView to layout
+			rootView.addView(wordView);
+			
+			// increment counter
+			loop++;
+		}
 		
     }
 }
