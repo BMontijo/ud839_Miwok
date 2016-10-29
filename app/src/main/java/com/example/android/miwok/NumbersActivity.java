@@ -15,10 +15,13 @@
  */
 package com.example.android.miwok;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import java.util.*;
-import android.widget.*;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class NumbersActivity extends AppCompatActivity {
 
@@ -43,24 +46,18 @@ public class NumbersActivity extends AppCompatActivity {
 		words.add(getResources().getString(R.string.ten));
 		
 		// find layout for adding views
-		LinearLayout rootView = (LinearLayout) findViewById(R.id.rootView);
-		
-		// initialize loop counter
-		int loop = 0;
+		LinearLayout rootView = (LinearLayout)findViewById(R.id.rootView);
 		
 		// loop to create and pooulate TextViews
-		while (loop < words.size()) {
+		for(int i = 0; i < words.size(); i++) {
 			// create TextView
 			TextView wordView = new TextView(this);
 			
 			// populate TextView
-			wordView.setText(words.get(loop));
+			wordView.setText(words.get(i));
 			
 			// add TextView to layout
 			rootView.addView(wordView);
-			
-			// increment counter
-			loop++;
 		}
 		
     }
