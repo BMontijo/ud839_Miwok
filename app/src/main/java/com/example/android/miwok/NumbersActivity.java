@@ -45,10 +45,13 @@ public class NumbersActivity extends AppCompatActivity {
 		words.add(getResources().getString(R.string.nine));
 		words.add(getResources().getString(R.string.ten));
 
-		ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, words);
+		// String array adapter for handling array to list view
+		ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, R.layout.list_item, words);
 
+		// Find list layout by id
 		ListView listView = (ListView) findViewById(R.id.list);
 
+		// Populate listView using adapter
         listView.setAdapter(itemsAdapter);
 		
     }
