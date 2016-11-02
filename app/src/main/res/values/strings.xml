@@ -119,25 +119,25 @@
     <string name="what_name">What is your name?</string>
 
     <!-- Phrase - "My name is..." [CHAR LIMIT=20]-->
-    <string name="name_is">My name is#8230</string>
+    <string name="name_is">My name is...</string>
 
     <!-- Phrase - "How are you feeling?" [CHAR LIMIT=20]-->
     <string name="how_feeling">How are you feeling?</string>
 
     <!-- Phrase - "I'm feeling good." [CHAR LIMIT=20]-->
-    <string name="feeling_good">I'm feeling good.</string>
+    <string name="feeling_good">I\'m feeling good.</string>
 
     <!-- Phrase - "Are you coming?" [CHAR LIMIT=20]-->
     <string name="coming">Are you coming?</string>
 
     <!-- Phrase - "Yes, I'm coming." [CHAR LIMIT=20]-->
-    <string name="yes_coming">Yes, I'm coming.</string>
+    <string name="yes_coming">Yes, I\'m coming.</string>
 
     <!-- Phrase - "I'm coming." [CHAR LIMIT=20]-->
-    <string name="im_coming">I'm coming.</string>
+    <string name="im_coming">I\'m coming.</string>
 
     <!-- Phrase - "Let's go." [CHAR LIMIT=20]-->
-    <string name="lets_go">Let's go.</string>
+    <string name="lets_go">Let\'s go.</string>
 
     <!-- Phrase - "Come here." [CHAR LIMIT=20]-->
     <string name="come_here">Come here.</string>
