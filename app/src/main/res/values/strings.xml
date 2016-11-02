@@ -28,87 +28,117 @@
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">Family Members</string>
 	
-	<!-- Number word for 1 [CHAR LIMIT=20]-->
+	<!-- Number - word for 1 [CHAR LIMIT=20]-->
 	<string name="one">one</string>
 	
-	<!-- Number word for 2 [CHAR LIMIT=20]-->
+	<!-- Number - word for 2 [CHAR LIMIT=20]-->
 	<string name="two">two</string>
 	
-	<!-- Number word for 3 [CHAR LIMIT=20]-->
+	<!-- Number - word for 3 [CHAR LIMIT=20]-->
 	<string name="three">three</string>
 	
-	<!-- Number word for 4 [CHAR LIMIT=20]-->
+	<!-- Number - word for 4 [CHAR LIMIT=20]-->
 	<string name="four">four</string>
 	
-	<!-- Number word for 5 [CHAR LIMIT=20]-->
+	<!-- Number - word for 5 [CHAR LIMIT=20]-->
 	<string name="five">five</string>
 	
-	<!-- Number word for 6 [CHAR LIMIT=20]-->
+	<!-- Number - word for 6 [CHAR LIMIT=20]-->
 	<string name="six">six</string>
 	
-	<!-- Number word for 7 [CHAR LIMIT=20]-->
+	<!-- Number - word for 7 [CHAR LIMIT=20]-->
 	<string name="seven">seven</string>
 	
-	<!-- Number word for 8 [CHAR LIMIT=20]-->
+	<!-- Number - word for 8 [CHAR LIMIT=20]-->
 	<string name="eight">eight</string>
 	
-	<!-- Number word for 9 [CHAR LIMIT=20]-->
+	<!-- Number - word for 9 [CHAR LIMIT=20]-->
 	<string name="nine">nine</string>
 	
-	<!-- Number word for 10 [CHAR LIMIT=20]-->
+	<!-- Number - word for 10 [CHAR LIMIT=20]-->
 	<string name="ten">ten</string>
 
-	<!-- Color word for "red" [CHAR LIMIT=20]-->
+	<!-- Color - word for "red" [CHAR LIMIT=20]-->
 	<string name="red">red</string>
 
-    <!-- Color word for "green" [CHAR LIMIT=20]-->
+    <!-- Color - word for "green" [CHAR LIMIT=20]-->
     <string name="green">green</string>
 
-    <!-- Color word for "brown" [CHAR LIMIT=20]-->
+    <!-- Color - word for "brown" [CHAR LIMIT=20]-->
     <string name="brown">brown</string>
 
-    <!-- Color word for "gray" [CHAR LIMIT=20]-->
+    <!-- Color - word for "gray" [CHAR LIMIT=20]-->
     <string name="gray">gray</string>
 
-    <!-- Color word for "black" [CHAR LIMIT=20]-->
+    <!-- Color - word for "black" [CHAR LIMIT=20]-->
     <string name="black">black</string>
 
-    <!-- Color word for "white" [CHAR LIMIT=20]-->
+    <!-- Color - word for "white" [CHAR LIMIT=20]-->
     <string name="white">white</string>
 
-    <!-- Color word for "dusty yellow" [CHAR LIMIT=20]-->
+    <!-- Color - word for "dusty yellow" [CHAR LIMIT=20]-->
     <string name="dusty_yellow">dusty yellow</string>
 
-    <!-- Color word for "mustard yellow" [CHAR LIMIT=20]-->
+    <!-- Color - word for "mustard yellow" [CHAR LIMIT=20]-->
     <string name="mustard_yellow">mustard yellow</string>
 
-    <!-- Family word for "father" [CHAR LIMIT=20]-->
+    <!-- Family - word for "father" [CHAR LIMIT=20]-->
     <string name="father">father</string>
 
-    <!-- Family word for "mother" [CHAR LIMIT=20]-->
+    <!-- Family - word for "mother" [CHAR LIMIT=20]-->
     <string name="mother">mother</string>
 
-    <!-- Family word for "son" [CHAR LIMIT=20]-->
+    <!-- Family - word for "son" [CHAR LIMIT=20]-->
     <string name="son">son</string>
 
-    <!-- Family word for "daughter" [CHAR LIMIT=20]-->
+    <!-- Family - word for "daughter" [CHAR LIMIT=20]-->
     <string name="daughter">daughter</string>
 
-    <!-- Family word for "older brother" [CHAR LIMIT=20]-->
+    <!-- Family - word for "older brother" [CHAR LIMIT=20]-->
     <string name="older_brother">older brother</string>
 
-    <!-- Family word for "younger brother" [CHAR LIMIT=20]-->
+    <!-- Family - word for "younger brother" [CHAR LIMIT=20]-->
     <string name="younger_brother">younger brother</string>
 
-    <!-- Family word for "older sister" [CHAR LIMIT=20]-->
+    <!-- Family - word for "older sister" [CHAR LIMIT=20]-->
     <string name="older_sister">older sister</string>
 
-    <!-- Family word for "younger sister" [CHAR LIMIT=20]-->
+    <!-- Family - word for "younger sister" [CHAR LIMIT=20]-->
     <string name="younger_sister">younger sister</string>
 
-    <!-- Family word for "grandmother" [CHAR LIMIT=20]-->
+    <!-- Family - word for "grandmother" [CHAR LIMIT=20]-->
     <string name="grandmother">grandmother</string>
 
-    <!-- Family word for "grandfather" [CHAR LIMIT=20]-->
+    <!-- Family - word for "grandfather" [CHAR LIMIT=20]-->
     <string name="grandfather">grandfather</string>
+
+    <!-- Phrase - "Where are you going?" [CHAR LIMIT=20]-->
+    <string name="where_going">Where are you going?</string>
+
+    <!-- Phrase - "What is your name?" [CHAR LIMIT=20]-->
+    <string name="what_name">What is your name?</string>
+
+    <!-- Phrase - "My name is..." [CHAR LIMIT=20]-->
+    <string name="name_is">My name is#8230</string>
+
+    <!-- Phrase - "How are you feeling?" [CHAR LIMIT=20]-->
+    <string name="how_feeling">How are you feeling?</string>
+
+    <!-- Phrase - "I'm feeling good." [CHAR LIMIT=20]-->
+    <string name="feeling_good">I'm feeling good.</string>
+
+    <!-- Phrase - "Are you coming?" [CHAR LIMIT=20]-->
+    <string name="coming">Are you coming?</string>
+
+    <!-- Phrase - "Yes, I'm coming." [CHAR LIMIT=20]-->
+    <string name="yes_coming">Yes, I'm coming.</string>
+
+    <!-- Phrase - "I'm coming." [CHAR LIMIT=20]-->
+    <string name="im_coming">I'm coming.</string>
+
+    <!-- Phrase - "Let's go." [CHAR LIMIT=20]-->
+    <string name="lets_go">Let's go.</string>
+
+    <!-- Phrase - "Come here." [CHAR LIMIT=20]-->
+    <string name="come_here">Come here.</string>
 </resources>
