@@ -13,6 +13,15 @@ public class Word {
     // variable to hold default word
     private String defaultTranslation;
 
+    // public constructor for Word object
+    public Word(String defaultWord, String miwokWord) {
+        // place defaultWord into defaultTranslation variable
+        defaultTranslation = defaultWord;
+
+        // place miwokWord into miwokTranslation variable
+        miwokTraslation = miwokWord;
+    }
+
     // function to return Miwok word
     public String getMiwokTraslation() {
         return miwokTraslation;
@@ -23,12 +32,4 @@ public class Word {
         return defaultTranslation;
     }
 
-    // public constructor for Word object
-    public Word(String defaultWord, String miwokWord) {
-        // place defaultWord into defaultTranslation variable
-        defaultTranslation = defaultWord;
-
-        // place miwokWord into miwokTranslation variable
-        miwokTraslation = miwokWord;
-    }
 }
