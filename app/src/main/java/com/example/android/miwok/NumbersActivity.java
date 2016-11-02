@@ -31,28 +31,28 @@ public class NumbersActivity extends AppCompatActivity {
         setContentView(R.layout.activity_numbers);
 		
 		// create array for number words
-		List<String> words = new ArrayList<>();
+		List<Word> words = new ArrayList<>();
 		
-		// populate array with words for 1 - 10
-		words.add(getResources().getString(R.string.one));
-		words.add(getResources().getString(R.string.two));
-		words.add(getResources().getString(R.string.three));
-		words.add(getResources().getString(R.string.four));
-		words.add(getResources().getString(R.string.five));
-		words.add(getResources().getString(R.string.six));
-		words.add(getResources().getString(R.string.seven));
-		words.add(getResources().getString(R.string.eight));
-		words.add(getResources().getString(R.string.nine));
-		words.add(getResources().getString(R.string.ten));
+		// populate array with Word objects for 1 - 10
+		words.add(new Word(getResources().getString(R.string.one), "lutti"));
+		words.add(new Word(getResources().getString(R.string.two), "otiiko"));
+		words.add(new Word(getResources().getString(R.string.three), "tolookosu"));
+		words.add(new Word(getResources().getString(R.string.four), "oyyisa"));
+		words.add(new Word(getResources().getString(R.string.five), "massokka"));
+		words.add(new Word(getResources().getString(R.string.six), "temmokka"));
+		words.add(new Word(getResources().getString(R.string.seven), "kenekaku"));
+		words.add(new Word(getResources().getString(R.string.eight), "kawinta"));
+		words.add(new Word(getResources().getString(R.string.nine), "wo'e"));
+		words.add(new Word(getResources().getString(R.string.ten), "na'aacha"));
 
-		// String array adapter for handling array to list view
-		ArrayAdapter<String> itemsAdapter = new ArrayAdapter<>(this, R.layout.list_item, words);
+		// Word adapter for handling array to list view
+		WordAdapter adapter = new WordAdapter(this, words);
 
 		// Find list layout by id
 		ListView listView = (ListView) findViewById(R.id.list);
 
 		// Populate listView using adapter
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
 		
     }
 }
