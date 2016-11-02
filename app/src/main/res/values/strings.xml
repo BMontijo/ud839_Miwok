@@ -81,4 +81,34 @@
 
     <!-- Color word for "mustard yellow" [CHAR LIMIT=20]-->
     <string name="mustard_yellow">mustard yellow</string>
+
+    <!-- Family word for "father" [CHAR LIMIT=20]-->
+    <string name="father">father</string>
+
+    <!-- Family word for "mother" [CHAR LIMIT=20]-->
+    <string name="mother">mother</string>
+
+    <!-- Family word for "son" [CHAR LIMIT=20]-->
+    <string name="son">son</string>
+
+    <!-- Family word for "daughter" [CHAR LIMIT=20]-->
+    <string name="daughter">daughter</string>
+
+    <!-- Family word for "older brother" [CHAR LIMIT=20]-->
+    <string name="older_brother">older brother</string>
+
+    <!-- Family word for "younger brother" [CHAR LIMIT=20]-->
+    <string name="younger_brother">younger brother</string>
+
+    <!-- Family word for "older sister" [CHAR LIMIT=20]-->
+    <string name="older_sister">older sister</string>
+
+    <!-- Family word for "younger sister" [CHAR LIMIT=20]-->
+    <string name="younger_sister">younger sister</string>
+
+    <!-- Family word for "grandmother" [CHAR LIMIT=20]-->
+    <string name="grandmother">grandmother</string>
+
+    <!-- Family word for "grandfather" [CHAR LIMIT=20]-->
+    <string name="grandfather">grandfather</string>
 </resources>
