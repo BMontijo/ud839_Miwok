@@ -119,7 +119,7 @@
     <string name="what_name">What is your name?</string>
 
     <!-- Phrase - "My name is..." [CHAR LIMIT=20]-->
-    <string name="name_is">My name is...</string>
+    <string name="name_is">My name is\u2026</string>
 
     <!-- Phrase - "How are you feeling?" [CHAR LIMIT=20]-->
     <string name="how_feeling">How are you feeling?</string>

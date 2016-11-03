@@ -35,7 +35,7 @@ public class PhrasesActivity extends AppCompatActivity {
         // populate array with Word objects for 1 - 10
         words.add(new Word(getResources().getString(R.string.where_going), "minto wuksus?"));
         words.add(new Word(getResources().getString(R.string.what_name), "tinnә oyaase'nә?"));
-        words.add(new Word(getResources().getString(R.string.name_is), "oyaaset..."));
+        words.add(new Word(getResources().getString(R.string.name_is), "oyaaset\u2026"));
         words.add(new Word(getResources().getString(R.string.how_feeling), "michәksәs?"));
         words.add(new Word(getResources().getString(R.string.feeling_good), "kuchi achit."));
         words.add(new Word(getResources().getString(R.string.coming), "әәnәs'aa?"));
