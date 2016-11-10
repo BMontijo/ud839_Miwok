@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import java.util.List;
+import android.widget.*;
 
 /**
  * Created by Brian on 11/1/2016.
@@ -42,6 +43,12 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         // get Miwok word from Word object and set to view
         miwokTextView.setText(currentWord.getMiwokTraslation());
+		
+		// get layout ImageView for current word
+		ImageView picImageView = (ImageView) listItemView.findViewById(R.id.pic_image_view);
+		
+		// get image from Word object and set to view
+		picImageView.setImageResource(currentWord.getImageResourceId());
 
         return listItemView;
     }
