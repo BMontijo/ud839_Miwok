@@ -33,14 +33,14 @@ public class ColorsActivity extends AppCompatActivity {
         List<Word> words = new ArrayList<>();
 
         // populate array with Word objects for 1 - 10
-        words.add(new Word(getResources().getString(R.string.red), "weṭeṭṭi"));
-        words.add(new Word(getResources().getString(R.string.green), "chokokki"));
-        words.add(new Word(getResources().getString(R.string.brown), "ṭakaakki"));
-        words.add(new Word(getResources().getString(R.string.gray), "ṭopoppi"));
-        words.add(new Word(getResources().getString(R.string.black), "kululli"));
-        words.add(new Word(getResources().getString(R.string.white), "kelelli"));
-        words.add(new Word(getResources().getString(R.string.dusty_yellow), "ṭopiisә"));
-        words.add(new Word(getResources().getString(R.string.mustard_yellow), "chiwiiṭә"));
+        words.add(new Word(getResources().getString(R.string.red), "weṭeṭṭi", R.drawable.color_red));
+        words.add(new Word(getResources().getString(R.string.green), "chokokki", R.drawable.color_green));
+        words.add(new Word(getResources().getString(R.string.brown), "ṭakaakki", R.drawable.color_brown));
+        words.add(new Word(getResources().getString(R.string.gray), "ṭopoppi", R.drawable.color_gray));
+        words.add(new Word(getResources().getString(R.string.black), "kululli", R.drawable.color_black));
+        words.add(new Word(getResources().getString(R.string.white), "kelelli", R.drawable.color_white));
+        words.add(new Word(getResources().getString(R.string.dusty_yellow), "ṭopiisә", R.drawable.color_dusty_yellow));
+        words.add(new Word(getResources().getString(R.string.mustard_yellow), "chiwiiṭә", R.drawable.color_mustard_yellow));
 
         // Word adapter for handling array to list view
         WordAdapter adapter = new WordAdapter(this, words);
