@@ -15,8 +15,11 @@ public class Word {
     private String defaultTranslation;
 	
 	// variable to hold image resource id
-	private int imageResourceId;
-
+	private int imageResourceId = NO_IMAGE;
+	
+	// constant that shows no image was passed into Word object
+	private static final int NO_IMAGE = -1;
+	
     // public constructor for Word object - no image
     public Word(String defaultWord, String miwokWord) {
         // place defaultWord into defaultTranslation variable
@@ -51,6 +54,11 @@ public class Word {
 	// function to return image id
 	public int getImageResourceId() {
 		return imageResourceId;
+	}
+	
+	// returns whether an image for this word
+	public boolean hasImage() {
+		return imageResourceId != NO_IMAGE;
 	}
 
 }
