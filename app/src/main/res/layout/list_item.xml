@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp">
+	android:minHeight="@dimen/list_item_height"
+	android:background="@color/category_numbers">
 
     <ImageView
         android:id="@+id/pic_image_view"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingLeft="16dp"
-        android:paddingRight="16dp"
-        android:paddingStart="16dp"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+		android:background="@color/tan_background"
         tools:src="@mipmap/ic_launcher"/>
 
     <TextView
         android:id="@+id/miwok_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+		android:textColor="@android:color/white"
+		android:textStyle="bold"
+		android:textAppearance="?android:textAppearanceMedium"
+		android:paddingTop="19dp"
+		android:paddingStart="16dp"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
         android:layout_toRightOf="@id/pic_image_view"
         tools:text="lutti"/>
 
@@ -26,6 +31,11 @@
         android:id="@+id/default_text_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+		android:textColor="@android:color/white"
+		android:textAppearance="?android:textAppearanceMedium"
+		android:paddingStart="16dp"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
         android:layout_toRightOf="@id/pic_image_view"
         android:layout_below="@id/miwok_text_view"
         tools:text="@string/one"/>
