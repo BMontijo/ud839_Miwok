@@ -45,7 +45,7 @@ public class PhrasesActivity extends AppCompatActivity {
         words.add(new Word(getResources().getString(R.string.come_here), "әnni'nem"));
 
         // Word adapter for handling array to list view
-        WordAdapter adapter = new WordAdapter(this, words);
+        WordAdapter adapter = new WordAdapter(this, words, R.color.category_phrases);
 
         // Find list layout by id
         ListView listView = (ListView) findViewById(R.id.list);

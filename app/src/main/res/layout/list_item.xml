@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-	android:minHeight="@dimen/list_item_height"
-	android:background="@color/category_numbers">
+	android:minHeight="@dimen/list_item_height">
 
     <ImageView
         android:id="@+id/pic_image_view"

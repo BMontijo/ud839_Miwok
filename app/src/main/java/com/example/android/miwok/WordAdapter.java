@@ -15,10 +15,16 @@ import android.widget.*;
  */
 
 public class WordAdapter extends ArrayAdapter<Word> {
-    // public constructor, takes activity and list we want to populate it with
-    public WordAdapter(Activity context, List<Word> word){
-        // initialize the array adapter
+    // variable to hold color resource
+	private int colorResource;
+	
+	// public constructor, takes activity and list we want to populate it with
+    public WordAdapter(Activity context, List<Word> word, int colorResourceId){
+		// initialize the array adapter
         super(context, 0, word);
+		
+		// set color resource
+		colorResource = colorResourceId;
     }
 
     @Override
@@ -58,6 +64,9 @@ public class WordAdapter extends ArrayAdapter<Word> {
 			// hide image view
 			picImageView.setVisibility(View.GONE);
 		}
+		
+		// set color to view
+		listItemView.setBackgroundResource(colorResource);
 
         return listItemView;
     }
