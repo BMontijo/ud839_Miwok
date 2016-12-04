@@ -38,5 +38,15 @@
         android:layout_toRightOf="@id/pic_image_view"
         android:layout_below="@id/miwok_text_view"
         tools:text="@string/one"/>
+	
+	<ImageView
+		android:id="@+id/playIcon"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:paddingStart="16dp"
+		android:paddingLeft="16dp"
+		android:paddingRight="16dp"
+		android:layout_alignParentEnd="true"
+		android:layout_alignParentRight="true"/>
 
 </RelativeLayout>

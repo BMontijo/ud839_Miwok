@@ -20,17 +20,23 @@ public class Word {
 	// constant that shows no image was passed into Word object
 	private static final int NO_IMAGE = -1;
 	
+	// variable to hold audio resource id
+	private int audioResourceId;
+	
     // public constructor for Word object - no image
-    public Word(String defaultWord, String miwokWord) {
+    public Word(String defaultWord, String miwokWord, int audioId) {
         // place defaultWord into defaultTranslation variable
         defaultTranslation = defaultWord;
 
         // place miwokWord into miwokTranslation variable
         miwokTraslation = miwokWord;
+		
+		// place audioId into audioResourceId
+		audioResourceId = audioId;
     }
 	
 	// public constructor for word object - with image
-	public Word(String defaultWord, String miwokWord, int imageId) {
+	public Word(String defaultWord, String miwokWord, int imageId, int audioId) {
         // place defaultWord into defaultTranslation variable
         defaultTranslation = defaultWord;
 
@@ -39,6 +45,9 @@ public class Word {
 		
 		// place imageId into imageResourceId
 		imageResourceId = imageId;
+		
+		// place audioId into audioResourceId
+		audioResourceId = audioId;
 	}
 
     // function to return Miwok word
@@ -59,6 +68,11 @@ public class Word {
 	// returns whether an image for this word
 	public boolean hasImage() {
 		return imageResourceId != NO_IMAGE;
+	}
+	
+	// returns audio resource id for sound playback
+	public int getAudioResourceId() {
+		return audioResourceId;
 	}
 
 }
