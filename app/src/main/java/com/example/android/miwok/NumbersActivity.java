@@ -29,6 +29,15 @@ public class NumbersActivity extends AppCompatActivity {
 	
 	// member variable for media player
 	private MediaPlayer mMediaPlayer;
+	
+	// member variable for media player listener
+	private MediaPlayer.OnCompletionListener mOnCompletionListener = new MediaPlayer.OnCompletionListener() {
+    	@Override
+	    // once sound finished playing, release media player
+    	public void onCompletion(MediaPlayer mp) {
+	    	releaseMediaPlayer();
+    	}
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -66,13 +75,30 @@ public class NumbersActivity extends AppCompatActivity {
 				// find which item was clicked on
 				Word word = words.get(i);
 				
+				// make sure media player is clear
+				releaseMediaPlayer();
+				
 				// set media player with proper audio resource
 				mMediaPlayer = MediaPlayer.create(NumbersActivity.this, word.getAudioResourceId());
 				
 				// start media player
 				mMediaPlayer.start();
+				
+				// set on complete listener
+				mMediaPlayer.setOnCompletionListener(mOnCompletionListener);
 			}
 		});
-		
     }
+	
+	// release media player resources
+	private void releaseMediaPlayer() {
+		// check if media player is initialized
+		if (mMediaPlayer != null) {
+			// is initialized, release media player
+			mMediaPlayer.release();
+
+			// set media player to null
+			mMediaPlayer = null;
+		}
+	}
 }

@@ -27,6 +27,15 @@ public class FamilyActivity extends AppCompatActivity {
 	// member variable for media player
     private MediaPlayer mMediaPlayer;
 	
+	// member variable for media player listener
+	private MediaPlayer.OnCompletionListener mOnCompletionListener = new MediaPlayer.OnCompletionListener() {
+    	@Override
+	    // once sound finished playing, release media player
+    	public void onCompletion(MediaPlayer mp) {
+	    	releaseMediaPlayer();
+    	}
+    };
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -58,18 +67,36 @@ public class FamilyActivity extends AppCompatActivity {
 		
 		// click listener for item clicks
 		listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-				@Override
-				public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-					// find which item was clicked on
-					Word word = words.get(i);
+			@Override
+			public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+				// find which item was clicked on
+				Word word = words.get(i);
+				
+				// make sure media player is clear
+				releaseMediaPlayer();
 
-					// set media player with proper audio resource
-					mMediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getAudioResourceId());
+				// set media player with proper audio resource
+				mMediaPlayer = MediaPlayer.create(FamilyActivity.this, word.getAudioResourceId());
 
-					// start media player
-					mMediaPlayer.start();
-				}
-			});
+				// start media player
+				mMediaPlayer.start();
+					
+				// set on complete listener
+				mMediaPlayer.setOnCompletionListener(mOnCompletionListener);
+			}
+		});
 
     }
+	
+	// release media player resources
+	private void releaseMediaPlayer() {
+		// check if media player is initialized
+		if (mMediaPlayer != null) {
+			// is initialized, release media player
+			mMediaPlayer.release();
+
+			// set media player to null
+			mMediaPlayer = null;
+		}
+	}
 }
