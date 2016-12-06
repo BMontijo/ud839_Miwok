@@ -88,6 +88,15 @@ public class FamilyActivity extends AppCompatActivity {
 
     }
 	
+	@Override
+	protected void onStop()
+	{
+		super.onStop();
+
+		// release media player resources
+		releaseMediaPlayer();
+	}
+	
 	// release media player resources
 	private void releaseMediaPlayer() {
 		// check if media player is initialized
