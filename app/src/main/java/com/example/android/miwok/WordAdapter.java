@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
-import android.widget.*;
 
 /**
  * Created by Brian on 11/1/2016.
@@ -16,15 +16,15 @@ import android.widget.*;
 
 public class WordAdapter extends ArrayAdapter<Word> {
     // variable to hold color resource
-	private int colorResource;
+	private int backgroundResource;
 	
 	// public constructor, takes activity and list we want to populate it with
-    public WordAdapter(Activity context, List<Word> word, int colorResourceId){
+    public WordAdapter(Activity context, List<Word> word, int backgroundResourceId){
 		// initialize the array adapter
         super(context, 0, word);
 		
 		// set color resource
-		colorResource = colorResourceId;
+		backgroundResource = backgroundResourceId;
     }
 
     @Override
@@ -66,7 +66,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
 		}
 		
 		// set color to view
-		listItemView.setBackgroundResource(colorResource);
+		listItemView.setBackgroundResource(backgroundResource);
 
         return listItemView;
     }

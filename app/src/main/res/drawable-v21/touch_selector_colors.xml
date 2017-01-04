@@ -4,7 +4,7 @@
 
     <!-- State when a row is being pressed (finger down) -->
     <item android:state_pressed="true">
-        <ripple android:color="@android:color/darker_gray" />
+        <ripple android:color="@color/gray" />
     </item>
 
     <!-- Default, "just hangin' out" state. -->

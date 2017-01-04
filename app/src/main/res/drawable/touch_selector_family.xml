@@ -4,7 +4,7 @@
 
     <!-- State when a row is being pressed (finger down) -->
     <item android:state_pressed="true"
-        android:drawable="@android:color/darker_gray" />
+        android:drawable="@color/gray" />
 
     <!-- Default, "just hangin' out" state. -->
     <item android:drawable="@color/category_family" />

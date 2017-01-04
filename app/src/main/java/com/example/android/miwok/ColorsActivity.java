@@ -81,7 +81,7 @@ public class ColorsActivity extends AppCompatActivity {
         words.add(new Word(getResources().getString(R.string.mustard_yellow), "chiwiiṭә", R.drawable.color_mustard_yellow, R.raw.color_mustard_yellow));
 
         // Word adapter for handling array to list view
-        WordAdapter adapter = new WordAdapter(this, words, R.color.category_colors);
+        WordAdapter adapter = new WordAdapter(this, words, R.drawable.touch_selector_colors);
 
         // Find list layout by id
         ListView listView = (ListView) findViewById(R.id.list);

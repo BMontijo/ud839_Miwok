@@ -34,5 +34,8 @@
 
     <!-- Background color for the phrases category -->
     <color name="category_phrases">#16AFCA</color>
+
+    <!-- Ripple color for touch selector -->
+    <color name="gray">#808080</color>
 	
 </resources>
