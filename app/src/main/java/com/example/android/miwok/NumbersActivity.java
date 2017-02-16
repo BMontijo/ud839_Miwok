@@ -83,7 +83,7 @@ public class NumbersActivity extends AppCompatActivity {
 		words.add(new Word(getResources().getString(R.string.ten), "na'aacha", R.drawable.number_ten, R.raw.number_ten));
 
 		// Word adapter for handling array to list view
-		WordAdapter adapter = new WordAdapter(this, words, R.drawable.touch_selector_numbers);
+		WordAdapter adapter = new WordAdapter(this, words, R.color.category_numbers);
 
 		// Find list layout by id
 		ListView listView = (ListView) findViewById(R.id.list);
