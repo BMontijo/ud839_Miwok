@@ -27,39 +27,39 @@
 
     <!-- Category name for the vocabulary words for family members [CHAR LIMIT=20] -->
     <string name="category_family">Family Members</string>
-	
-	<!-- Number - word for 1 [CHAR LIMIT=20]-->
-	<string name="one">one</string>
-	
-	<!-- Number - word for 2 [CHAR LIMIT=20]-->
-	<string name="two">two</string>
-	
-	<!-- Number - word for 3 [CHAR LIMIT=20]-->
-	<string name="three">three</string>
-	
-	<!-- Number - word for 4 [CHAR LIMIT=20]-->
-	<string name="four">four</string>
-	
-	<!-- Number - word for 5 [CHAR LIMIT=20]-->
-	<string name="five">five</string>
-	
-	<!-- Number - word for 6 [CHAR LIMIT=20]-->
-	<string name="six">six</string>
-	
-	<!-- Number - word for 7 [CHAR LIMIT=20]-->
-	<string name="seven">seven</string>
-	
-	<!-- Number - word for 8 [CHAR LIMIT=20]-->
-	<string name="eight">eight</string>
-	
-	<!-- Number - word for 9 [CHAR LIMIT=20]-->
-	<string name="nine">nine</string>
-	
-	<!-- Number - word for 10 [CHAR LIMIT=20]-->
-	<string name="ten">ten</string>
 
-	<!-- Color - word for "red" [CHAR LIMIT=20]-->
-	<string name="red">red</string>
+    <!-- Number - word for 1 [CHAR LIMIT=20]-->
+    <string name="one">one</string>
+
+    <!-- Number - word for 2 [CHAR LIMIT=20]-->
+    <string name="two">two</string>
+
+    <!-- Number - word for 3 [CHAR LIMIT=20]-->
+    <string name="three">three</string>
+
+    <!-- Number - word for 4 [CHAR LIMIT=20]-->
+    <string name="four">four</string>
+
+    <!-- Number - word for 5 [CHAR LIMIT=20]-->
+    <string name="five">five</string>
+
+    <!-- Number - word for 6 [CHAR LIMIT=20]-->
+    <string name="six">six</string>
+
+    <!-- Number - word for 7 [CHAR LIMIT=20]-->
+    <string name="seven">seven</string>
+
+    <!-- Number - word for 8 [CHAR LIMIT=20]-->
+    <string name="eight">eight</string>
+
+    <!-- Number - word for 9 [CHAR LIMIT=20]-->
+    <string name="nine">nine</string>
+
+    <!-- Number - word for 10 [CHAR LIMIT=20]-->
+    <string name="ten">ten</string>
+
+    <!-- Color - word for "red" [CHAR LIMIT=20]-->
+    <string name="red">red</string>
 
     <!-- Color - word for "green" [CHAR LIMIT=20]-->
     <string name="green">green</string>
@@ -141,4 +141,5 @@
 
     <!-- Phrase - "Come here." [CHAR LIMIT=20]-->
     <string name="come_here">Come here.</string>
+
 </resources>
