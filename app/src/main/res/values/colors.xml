@@ -37,5 +37,8 @@
 
     <!-- Ripple color for touch selector -->
     <color name="gray">#808080</color>
+
+    <!-- Background color for tabs -->
+    <color name="tab_background">#A8A19E</color>
 	
 </resources>

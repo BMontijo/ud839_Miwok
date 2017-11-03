@@ -16,6 +16,7 @@
 package com.example.android.miwok;
 
 import android.os.Bundle;
+import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 
@@ -32,10 +33,16 @@ public class MainActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         // Create adapter to know which fragment to show
-        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager());
+        SimpleFragmentPagerAdapter adapter = new SimpleFragmentPagerAdapter(getSupportFragmentManager(), this);
 
         // set adapter to ViewPager
         viewPager.setAdapter(adapter);
+
+        // Find tab layout
+        TabLayout tabLayout = (TabLayout) findViewById(R.id.slidetabs);
+
+        // Give tab layout the viewPager
+        tabLayout.setupWithViewPager(viewPager);
 
     }
 }
